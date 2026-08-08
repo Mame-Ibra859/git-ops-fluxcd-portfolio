@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nextjs-config
+  namespace: nextjs-app
+data:
+  DB_HOST: "postgres"

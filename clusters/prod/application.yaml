@@ -4,7 +4,7 @@ metadata:
   name: application
   namespace: flux-system
 spec:
-  dependOn:
+  dependsOn:
     - name: data-platform
   interval: 10m
   sourceRef:

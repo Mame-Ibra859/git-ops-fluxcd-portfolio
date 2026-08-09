@@ -10,6 +10,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: portfolio
-  path: ./application
+  path: ./applications
   prune: true
   timeout: 1m

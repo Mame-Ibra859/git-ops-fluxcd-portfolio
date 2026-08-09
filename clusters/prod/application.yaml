@@ -5,11 +5,11 @@ metadata:
   namespace: flux-system
 spec:
   dependOn:
-    - name: postgresql
+    - name: data-platform
   interval: 10m
   sourceRef:
     kind: GitRepository
-    name: podinfo
+    name: portfolio
   path: clusters/prod/application
   prune: true
   timeout: 1m

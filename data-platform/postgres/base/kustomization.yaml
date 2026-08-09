@@ -7,3 +7,4 @@ resources:
   - configmap.yaml
   - statefulset.yaml
   - pvc.yaml
+  - secret.yaml

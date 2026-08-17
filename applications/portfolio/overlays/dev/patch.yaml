@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-nextjs-app
+  namespace: nextjs-app
+spec:
+  template:
+    spec:
+      containers:
+        - name: my-nextjs-app
+          image: fayemameibra/devops-portfolio:v0.0.2

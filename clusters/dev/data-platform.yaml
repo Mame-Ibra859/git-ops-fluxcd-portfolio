@@ -12,3 +12,8 @@ spec:
   path: ./data-platform
   prune: true
   timeout: 1m
+
+  decryption:
+    provider: sops
+    secretRef:
+      name: sops-age

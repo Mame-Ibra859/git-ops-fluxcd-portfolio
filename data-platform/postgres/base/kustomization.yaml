@@ -8,4 +8,4 @@ resources:
   - configmap.yaml
   - statefulset.yaml
   - pvc.yaml
-  - secret.yaml
+  - secret.enc.yaml

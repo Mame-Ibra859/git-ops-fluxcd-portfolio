@@ -1,0 +1,25 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageUpdateAutomation
+metadata:
+  name: flux-system
+  namespace: flux-system
+spec:
+  interval: 1m
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  git:
+    checkout:
+      ref:
+        branch: main
+    commit:
+      author:
+        email: faye.mame-ibra@ugb.edu.sn
+        name: fluxcdbot
+      messageTemplate: |
+        chore(image): update {{range .Updated.Images}}{{.}}{{end}} to latest
+    push:
+      branch: main
+  update:
+    path: ./applications/portfolio/base
+    strategy: Setters

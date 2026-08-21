@@ -1,0 +1,11 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: devops-portfolio-policy
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: devops-portfolio
+  policy:
+    semver:
+      range: ">0.0.1 <0.0.4"

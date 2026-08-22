@@ -17,7 +17,7 @@ spec:
         email: faye.mame-ibra@ugb.edu.sn
         name: fluxcdbot
       messageTemplate: |
-        chore(image): update {{range .Updated.Images}}{{.}}{{end}} to latest
+        chore(image): update {{range .Changed.changes}}{{.}}{{end}} to latest
     push:
       branch: main
   update:

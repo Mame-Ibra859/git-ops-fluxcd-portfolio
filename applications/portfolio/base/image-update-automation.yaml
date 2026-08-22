@@ -16,8 +16,11 @@ spec:
       author:
         email: faye.mame-ibra@ugb.edu.sn
         name: fluxcdbot
-      messageTemplate: |
-        chore(image): update {{range .Updated.Images}}{{.}}{{end}} to latest
+        messageTemplate: |
+          Update images
+          {{ range .Changed.Changes }}
+          - {{ . }}
+          {{ end }}
     push:
       branch: main
   update:

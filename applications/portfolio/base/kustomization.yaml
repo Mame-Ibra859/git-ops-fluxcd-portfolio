@@ -8,3 +8,6 @@ resources:
   - ingress.yaml
   - configmap.yaml
   - secret.enc.yaml
+  - image-repository.yaml
+  - image-policy.yaml
+  - image-update-automation.yaml

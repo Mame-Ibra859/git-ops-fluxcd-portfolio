@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
         - name: my-nextjs-app
-          image: fayemameibra/devops-portfolio:v0.0.2
+          image: fayemameibra/devops-portfolio:v0.0.2 # {"$imagepolicy": "flux-system:devops-portfolio-policy"}

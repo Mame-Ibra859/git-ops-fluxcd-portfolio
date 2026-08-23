@@ -21,5 +21,5 @@ spec:
     push:
       branch: main
   update:
-    path: ./applications/portfolio/base
+    path: ./applications/portfolio
     strategy: Setters

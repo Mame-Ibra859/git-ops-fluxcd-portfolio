@@ -124,6 +124,4 @@ Gardez la clé privée hors dépôt.
 Conclusion
 - En pratique : installer l'opérateur Flux (Helm ou `flux install`), appliquer `FluxInstance` et `GitRepository`, puis créer un `Kustomization` côté cluster pointant vers `./applications/...` dans ce dépôt. Les image controllers (`image-reflector` + `image-automation`) permettent l'automatisation sûre des mises à jour d'images tandis que `sops+age` protège les secrets dans Git.
 
-Fichiers modifiables / prochaines étapes
-- Je peux : 1) ajouter les fichiers `flux-instance.yaml` et `git-repo.yaml` au dossier `clusters/*` si vous le souhaitez, 2) créer un commit + PR.
 
